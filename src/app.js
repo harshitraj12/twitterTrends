@@ -131,21 +131,7 @@ app.post('/contact',async(req,res)=>{
   }
 })
 
-// app.get('/se',async(req,res)=>{
-//   // const {userName} = req.body
-//   const screen_name = 'SanjayKumarara'
-//   try{
-//     const data = await client.get('users/lookup.json'
-//     ,{
-//       screen_name
-//     })
-//     res.json(data)
-//   }
-  
-//   catch(err){
-//     console.log(err)
-//   }
-// })
+
 
 app.get('*',(req,res)=>{
   res.render('index')
