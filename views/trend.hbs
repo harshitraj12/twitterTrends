@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headers}}
+</head>
+
+<body>
+    <div class="container-fluid main_menu">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+
+
+            <nav class="navbar navbar-expand-lg ">
+
+                 {{!-- <a class="navbar-brand" href="/"> Get The News </a> --}}
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                
+
+                <!-- Default dropdown button -->
+                
+
+                 <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Countries
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <button class ='country_cat'>World Wide</button>
+                    <button class ='country_cat'>India</button>
+                    <button class ='country_cat'>USA</button>
+                    <button class ='country_cat'>Great Britain</button>
+                    <button class ='country_cat'>Australia</button>
+                </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/trend">Trends</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/search">Search User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/followings">Followings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact Me</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+    <!-- main header  -->
+    <div class="main_header">
+
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="container-fluid  main_content">
+
+                    {{!-- <button class ='container-fluid' id ='get_news'>Get Trends</button> --}}
+
+                    <div class="tempInformation  " id ="main_box">
+                        <div class="top_layer">
+                            <p id="country">India</p>
+                            <p id="date_time"></p>
+                        </div>
+                        <div class="main_layer ">
+                            {{!-- <div class="middle_layer data_hide">
+                               
+                            </div> --}}
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                
+                            <div id="loader"></div>
+                            <div class="carousel-inner" id ='carousel_content' class="animate-bottom">
+
+                               
+                            </div>
+                            <a class="carousel-control-prev" id='prev_btn' href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" id='btn_icons1'></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" id='next_btn' href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true" id='btn_icons2'></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <p>
+            Designed & Developed By Harshit Raj
+        </p>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

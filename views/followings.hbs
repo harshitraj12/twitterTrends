@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headers}}
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="main_header">
+
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="container-fluid  main_content">
+
+                    <section class="temp_form">
+
+                        <input type="text" id="userName" placeholder="Enter the user name to find whom they are following..." name='userName' required autofocus>
+                        <br>
+                        <button id='submitBtn'>Search</button> 
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+<section id="projects" class="services">
+    <div class="container">
+{{!--  mt-4 mt-md-0 --}}
+      <div class="section-title">
+      </div>
+
+      <div id="loader"></div>
+
+      <div class="row" id='rows'>
+        
+
+        
+
+
+        
+
+    
+      </div>
+
+    </div>
+
+</section>
+    <script src="js/navigation.js"></script>
+
+    <script src="js/followings.js"></script>
+    
+     <!-- footer -->
+    <footer>
+        <p>
+            Designed & Developed By Harshit Raj
+        </p>
+    </footer>
+</body>
+
+</html>

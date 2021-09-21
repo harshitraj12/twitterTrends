@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headers}}
+</head>
+
+<body>
+    {{>navbar}}
+    <div class="main_header">
+
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="container-fluid  main_content">
+
+                    <section class="temp_form">
+
+                        <input type="text" id="userName" placeholder="Enter the user name.." name='userName' required autofocus>
+                        <br>
+                        <button id='submitBtn'>Search</button> 
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+<section id="projects" class="services">
+    <div class="container">
+
+      <div class="section-title">
+      </div>
+
+      <div id="loader"></div>
+
+      <div class="row" id='rows'>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box" id='b1'>
+            <div class="icon"><img class="bx bxl-dribbble profileImage" src=""/></div>
+            <h4 class ='title'></h4><img class ='verified' alt="">
+            <p class='screenName'></p>
+            <p class='description'></p>
+            <p class='Location'></p>
+            <p class='Followers'></p>
+            <p class='tweetOn'></p>
+            <a href="" class="latestTweet" target="_blank"></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box" id='b2'>
+            <div class="icon"><img class="bx bxl-dribbble profileImage" src=""/></div>
+            <h4 class ='title'></h4><img class ='verified' alt="" >
+            <p class='screenName'></p>
+            <p class='description'></p>
+            <p class='Location'></p>
+            <p class='Followers'></p>
+            <p class='tweetOn'></p>
+            <a href="" class="latestTweet" target="_blank"></a>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box" id='b3'>
+            <div class="icon"><img class="bx bxl-dribbble profileImage" src=""/></div>
+           <h4 class ='title'></h4><img class ='verified' alt="">
+           <p class='screenName'></p>
+            <p class='description'></p>
+            <p class='Location'></p>
+            <p class='Followers'></p>
+            <p class='tweetOn'></p>
+            <a href="" class="latestTweet" target="_blank"></a>
+          </div>
+        </div>
+
+    
+      </div>
+
+    </div>
+
+</section>
+    <script src="js/navigation.js"></script>
+    <script src="js/userSearch.js"></script>
+    
+     <!-- footer -->
+    <footer>
+        <p>
+            Designed & Developed By Harshit Raj
+        </p>
+    </footer>
+</body>
+
+</html>
