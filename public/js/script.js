@@ -107,7 +107,7 @@ async function loading(){
         function myFunction() {
             myVar = setTimeout(fetchnews, 1000);
         }
-    console.log(data)
+           
     myFunction()
     function fetchnews()
     {   

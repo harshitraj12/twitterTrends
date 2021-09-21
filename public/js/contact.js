@@ -6,27 +6,35 @@ submit_btn.addEventListener('click',async(e)=>{
   const email = document.getElementById('email').value
   const subject = document.getElementById('subject').value
   const message = document.getElementById('message').value
-  const res = await fetch("/contact",{
-      method:"POST",
-      headers:{
-          "Content-Type":"application/json",
-          'Accept': 'application/json'
-      },
-      body:JSON.stringify({
-          name,email,subject,message
-      }),
-  });
-  const data = await res.json()
-  if(data.status==200){
-    alert("Thanks for responding");
-    window.location.reload()
-    name="";email="";subject="";message=""
-  }
-  else if(data.status==422)
+
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
   {
-    alert("Fill the form properly")
+    const res = await fetch("/contact",{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json",
+            'Accept': 'application/json'
+        },
+        body:JSON.stringify({
+            name,email,subject,message
+        }),
+    });
+    const data = await res.json()
+    if(data.status==200){
+      alert("Thanks for responding");
+      window.location.reload()
+      name="";email="";subject="";message=""
+    }
+    else if(data.status==422)
+    {
+      alert("Fill the form properly")
+    }
+    else{
+        alert("Please try again. Some error occured")
+    }
   }
   else{
-      alert("Please try again. Some error occured")
-    }
+    alert("You have entered an invalid email address!")
+    return (false)
+  }
 })
