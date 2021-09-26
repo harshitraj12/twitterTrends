@@ -1,6 +1,9 @@
 
 # Twitter Trends
 
+![text](https://codemoto.io/wp-content/themes/cloudhost/library/images/node-express-mongo.png)
+
+
 A Full Stack Web Application for getting the twitter trends across different countries.
 
 
@@ -27,7 +30,11 @@ A Full Stack Web Application for getting the twitter trends across different cou
 
 **Server:** Node, Express
 
-**DataBase** MongoDB Atlas
+**DataBase:** MongoDB Atlas
+
+**API:** Twitter API
+
+**Deployed On:** Heroku APP
   
 ## Demo
 
@@ -62,7 +69,7 @@ To deploy this application:
 3. You also need to create an account on MongoDB Atlas for remote DB.
 `https://www.mongodb.com/cloud/atlas` 
 
-4. Now create a cluster inside mongodb Atlas and create a DB inside free Tier.
+4. Now create a cluster inside mongodb Atlas and create a DB named 'ContactMe' inside free Tier.
 
 5. Allow access of all IP to your DB. Copy the connection path of DB.
 
